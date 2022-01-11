@@ -33,9 +33,9 @@ const LoginForm = (props) => {
 
     const loginSubmit = (e) => {
         e.preventDefault
-        //  if (typeof window === "undefined") {
-        //   return;
-        // }
+         if (typeof window === "undefined") {
+          return;
+        }
         if (!email){
             setValidMsg(`Please enter your email address`)
             return false
